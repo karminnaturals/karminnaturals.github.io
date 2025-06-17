@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" style="font-size: 62.5%;">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Karmin Naturals | Organic Chilli Powder</title>
+  <link rel="shortcut icon" href="./assets/images/Karmin Naturals Tab Icon.png" type="images/x-icon">
+  </link>
+</head>
+
+<body>
+  <div class="header"><img style="width: 45rem; margin-top: 2rem;" src="./assets/images/Karmin Naturals Logo.png"
+      alt="Karmin Naturals">
+  </div>
+  <h2 style="font-size: 3rem; color: #000000;">Form Submitted</h2>
+  <h1 style="font-size: 2rem;">Thank You!</h1>
+  <p style="font-size: 3rem;">We will get back to you soon.</p>
+  <a href="./index.html" class="hlink" style="margin-top: 2rem; text-decoration: none; color: inherit;">
+    <p>Go
+      Back</p>
+  </a>
+</body>
+
+<style>
+  /* Poppins Font */
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font: normal 300 normal 1rem 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    background-color: #eeeee9;
+    color: #6a1103;
+  }
+
+  a {
+    display: block;
+    background-color: #0e4322;
+    height: 3.7rem;
+    width: auto;
+    padding-inline: 10rem;
+    padding-block: 0.7rem;
+    position: relative;
+    z-index: 48;
+  }
+
+  a>p {
+    color: #ffffff;
+    font-size: 1.7rem;
+  }
+
+  a::before {
+    content: "Go Back";
+    color: #ffffff;
+    font-size: 1.7rem;
+    position: absolute;
+    left: 10rem;
+    top: 0.7rem;
+    z-index: 50;
+  }
+
+  a::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: #149044;
+    opacity: 0.4;
+    transition: width 0.2s ease-out;
+    z-index: 49;
+  }
+
+  a:hover::after {
+    width: 100%;
+  }
+</style>
+
+</html>
