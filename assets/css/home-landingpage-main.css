@@ -145,6 +145,7 @@ button {
   height: 40rem;
   width: 100%;
   margin: 0;
+  margin-inline: auto;
   padding: 0;
 }
 
@@ -268,6 +269,7 @@ button {
   height: 50rem;
   width: 100%;
   margin: 0;
+  margin-inline: auto;
   padding: 0;
 }
 
