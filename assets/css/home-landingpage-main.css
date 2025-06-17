@@ -183,16 +183,19 @@ button {
   text-wrap: nowrap;
 }
 
+.products-flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10rem;
+  justify-content: center;
+}
+
 .product {
   display: inline-block;
   color: var(--dark-color-lightbg);
   width: 35rem;
   height: 45rem;
-  margin-inline: 2rem;
-}
-
-.one {
-  margin-left: 33rem;
 }
 
 .product>* {
@@ -202,7 +205,7 @@ button {
 .product .img {
   background: url(./images/chilli-powder-1.png) no-repeat 0.01rem;
   aspect-ratio: 1;
-  width: 35rem;
+  width: inherit;
   overflow: hidden;
   background-size: 150%;
   transition: background-size 1s ease-out;
@@ -511,10 +514,6 @@ button {
     height: 35rem;
     grid-template-columns: repeat(2, 15rem);
   }
-
-  .one {
-    margin-left: 2rem;
-  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -582,6 +581,28 @@ button {
     display: block;
   }
 
+  .product-section {
+    padding-bottom: 3rem;
+  }
+
+  .product-section-header {
+    font-size: var(--font-size-lg);
+  }
+
+  .products-flex {
+    gap: 2rem;
+  }
+
+  .product {
+    width: 30rem;
+    height: 40rem;
+  }
+
+  .product-section-contact {
+    margin-top: 5rem;
+    font-size: var(--font-size-sm);
+  }
+  
   .website-ad {
     height: auto;
   }
@@ -595,10 +616,6 @@ button {
   .top-banner,
   .top-banner>img {
     height: auto;
-  }
-
-  .one {
-    margin-left: 2rem;
   }
 
   .form-section {
